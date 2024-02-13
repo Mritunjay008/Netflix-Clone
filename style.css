@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.main {
+  background-image: url(./Assets/images/bg.jpg);
+  height: 90vh;
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: max(1200px, 100vw);
+}
+.main .box {
+  height: 90vh;
+  width: 100%;
+  opacity: 0.69;
+  background-color: black;
+  position: absolute;
+  top: 0;
+}
+
+nav {
+  max-width: 60vw;
+  margin: auto;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  height: 92px;
+}
+
+nav img {
+  width: 165px;
+  position: relative;
+  z-index: 10;
+  left: -120px;
+  top: 10px;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+
+.hero {
+  font-family: "Martel Sans", sans-serif;
+  height: calc(100% - 62px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+.hero > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.hero > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.sepration {
+  margin-top: -29px;
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+}
+
+.btn {
+  font-family: "Poppins", sans-serif;
+  padding: 3px 8px;
+  font-weight: 400;
+  background-color: rgba(248, 243, 243, 0.021);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-red {
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.english{
+  left: 50px;
+  width: 8vw;
+}
+.english svg{
+  padding-right:8px;
+  padding-top: 6px;
+}
+.btn-red-sm {
+  background-color: red;
+  color: white;
+  width: 75px;
+  border: none;
+  left: 70px;
+}
+.hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+/* . input {
+  
+} */
+.hero-buttons input {
+  height: 25px;
+  width: 220px;
+  background-color: rgba(23, 23, 23, 0.7);
+  padding: 9px 96px 8px 18px;
+  color: white;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.first {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  max-width: 70vw;
+  margin: auto;
+  color: white;
+  align-items: center;
+  padding: 10vw;
+}
+
+.secImg {
+  position: relative;
+}
+.secImg img {
+  width: 500px;
+  position: relative;
+  z-index: 10;
+}
+.secImg video {
+  position: absolute;
+  width: 400px;
+  top: 61px;
+  left: 56px;
+}
+
+.first > div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+
+.first > div :first-child {
+  font-size: 48px;
+  font-weight: bolder;
+}
+.first > div :nth-child(2) {
+  font-size: 24px;
+}
+.third :nth-child(2) :nth-child(2) {
+  width: 300px;
+  left: 90px;
+  top: 70px;
+}
+.faq h2 {
+  text-align: center;
+  font-size: 48px;
+}
+.faq {
+  background-color: black;
+  color: white;
+  padding: 50px;
+}
+.faqbox:hover {
+  background-color: #414141;
+}
+.faqbox {
+  transition: all 0.5s ease-out;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(40, 39, 39);
+  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  max-width: 76vw;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.ready {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding-bottom:1vw;
+}
+
+.ready-f{
+  padding-bottom: 4vw;
+}
+
+.question{
+  color: rgba(255,255,255,0.7);
+  text-align:left;
+  font-weight: 300;
+  width: 70vw;
+  margin: auto;
+  margin-top: 4vw;
+  margin-bottom: 1vw;
+}
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 70vw;
+  margin: auto;
+  font-weight: 300;
+}
+.footer-item a{
+  color: rgba(255,255,255,0.7);
+  padding: 4px;
+  font-size: 16px;
+}
+.footer-item{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1300px) {
+  .first{
+    flex-wrap: wrap;
+  }
+  .footer{
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  .secImg Img{
+    width: 305px;
+  }
+  .secImg video{
+    width: 200px;
+  }
+}
