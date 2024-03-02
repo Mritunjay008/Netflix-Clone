@@ -244,6 +244,32 @@ nav button {
   flex-direction: column;
 }
 
+
+/* scroll-bar color change */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+/* Firefox */
+/* The width and height properties are necessary here */
+/* Note: Firefox does not support border-radius or padding properties on scrollbar-thumb */
+/* To maintain consistency, you may consider removing border-radius and padding from webkit-scrollbar-thumb as well */
+/* Or adjust them accordingly */
+/* Also, Firefox supports scrollbar-color property but as of my last update it's not widely supported */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #1a1a1a;
+}
+
 @media screen and (max-width: 1300px) {
   .first{
     flex-wrap: wrap;
@@ -259,3 +285,5 @@ nav button {
     width: 200px;
   }
 }
+
+
